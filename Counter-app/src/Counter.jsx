@@ -22,6 +22,7 @@ function Counter() {
 
     const previous = past[past.length - 1];
     const newPast = past.slice(0, -1);
+    console.log(newPast);
 
     setPast(newPast);
     setFuture([present, ...future]);
@@ -33,6 +34,7 @@ function Counter() {
 
     const next = future[0];
     const newFuture = future.slice(1);
+    console.log(newFuture);
 
     setPast([...past, present]);
     setPresent(next);
